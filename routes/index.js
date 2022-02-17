@@ -12,6 +12,8 @@ var userDataSchema = new Schema({
 
 var UserData = mongoose.model('Userdata', userDataSchema)
 
+console.log("Userdata: %o",UserData)
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
